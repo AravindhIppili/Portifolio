@@ -25,9 +25,11 @@ class ActiveProjects extends StatelessWidget {
           ),
           GridView(
             shrinkWrap: true,
+            physics: ScrollPhysics(),
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 childAspectRatio: 0.75,
+                mainAxisSpacing: 20,
                 crossAxisSpacing: 10),
             children: [
               GridItem(
@@ -120,19 +122,22 @@ class GridItem extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 130),
+                    margin: EdgeInsets.only(top: 100),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(title,
-                            style: TextStyle(
-                                fontSize: 25,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white)),
-                        Text(subtitle,
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white))
+                        Text(
+                          title,
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                        Text(
+                          subtitle,
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.white),
+                        )
                       ],
                     ),
                   ),
