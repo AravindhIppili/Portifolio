@@ -11,7 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: HiddenDrawerMenu(
-        backgroundColorMenu: Colors.white,
+        backgroundColorMenu: Colors.red,
         screens: [],
       ),
       appBar: MyAppBar(),
