@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
-import 'package:todo/components/active_projects.dart';
-import 'package:todo/components/app_bar.dart';
-import 'package:todo/components/img_and_name.dart';
-import 'package:todo/components/mytaks.dart';
 import 'package:todo/first_screen.dart';
 import 'package:todo/second_screen.dart';
 
@@ -19,7 +15,6 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    // TODO: implement initState
 
     items.add(new ScreenHiddenDrawer(
       ItemHiddenMenu(
